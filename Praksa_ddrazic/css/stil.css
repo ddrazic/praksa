@@ -1,0 +1,750 @@
+/*pocetna*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.pozadina, .pozadina1{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.778), rgba(0, 0, 0, 0.805)), url(https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8&w=1000&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pozadina1{
+  height: 100%;
+}
+
+.navbar{
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.logo{
+  width: 50px;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+  padding-top: 25px;
+  text-align: right;
+}
+
+.navbar ul li a{
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+}
+
+
+.navbar ul li::after{
+  content:'';
+  height: 3px;
+  width: 0;
+  background: #a522e1;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.navbar a.active {
+  color: #b087d5;
+}
+
+.sadrzaj{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  background: transparent;
+}
+
+.sadrzaj h1{
+  font-size: 50px;
+  margin-top: 80px;
+  background: transparent;
+}
+
+.sadrzaj p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  background: transparent;
+}
+
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 2px solid #a522e1;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span{
+  background: #a522e1;
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%;
+}
+button:hover{
+  border: none;
+}
+
+#povratak{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-left: 50px;
+}
+
+/*footer*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ffffff;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+  background: #4D4D4D;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+
+.footer-distributed h5{
+  color:  #d19fff;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+}
+
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #d19fff;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #ffffff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  transparent;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.praksa{
+  padding-top: 20px;
+  font-size: 15px;
+  color: white;
+}
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+/*knjige*/
+
+#bestseleri{
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin: 20px 40px 40px 30px;
+
+}
+
+.callout > h1{
+  font-family:sans-serif;
+  text-align: center;
+}
+
+#grid{
+  margin-top: 20px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 5px;
+}
+
+#glavnigrid{
+  background: rgb(221, 217, 212);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+}
+
+#skrivenigrid{
+  background: transparent;
+  border: none;
+}
+
+.popust{
+  width: 120px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 180px;
+  height: 290px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 0;
+}
+
+
+.flip-card-back {
+  background: rgb(101,97,131);
+  background: linear-gradient(0deg, rgba(101,97,131,1) 0%, rgba(77,77,77,1) 100%);
+  color: rgb(255, 255, 255);
+  transform: rotateY(180deg);
+}
+
+
+#k1{
+  background-color: transparent;
+  border: none;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back{
+  font-size: 12px;
+}
+
+#katalog{
+  background-color: white;
+  padding-top: 25px;
+  align-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.naslov{
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.cijene{
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.dostupnost{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.button{
+  background-color: transparent;
+  border: #5e3a8e 2px solid;
+  color: black;
+}
+
+.button:hover{
+  background-color: #8a77a3;
+  
+}
+
+/*usluge*/
+
+
+#ikon{
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#i3, #i4, #i5, #i6{
+  width: 70px;
+}
+
+#usluge{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 100%;
+}
+
+
+#grid0, #grid01{
+  align-items: center;
+  background-color: #ffffff;
+}
+
+#grid1{
+  background-color: white;
+  border: 2px solid #5d386e;
+  color: #5d386e;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#grid0{
+  padding-top: 15px;
+}
+
+#grid01{
+  margin-bottom: 15px;
+}
+
+#grid2{
+  background-color: transparent;
+  border: none;
+}
+
+/*kontakt*/
+
+#form{
+  align-items: center;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(110,89,120,1) 51%);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#formsmall{
+  align-items: center;
+  background: rgb(110,89,120);
+  background: linear-gradient(0deg, rgba(110,89,120,1) 31%, rgba(255,255,255,1) 32%);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#kontakt1 {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background-color: transparent;
+  align-content: center;
+}
+
+.contact-form {
+  background-color: transparent;
+  padding: 20px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.gumbk {
+  background-color: rgb(255, 255, 255);
+  color: #6e5978;
+  padding: 10px 20px;
+  border: 1px solid #6e5978;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gumbk:hover {
+  background-color: #ababab;
+  border: 1px solid #6e5978;
+}
+
+#kontakt2 {
+  border: none;
+  background-color:transparent;
+  text-align: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+
+.kontaktirajte{
+  color: #6e5978;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 33px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+
+#nav2{
+  border: none;
+  width:100%;
+  height: 100%;
+  background: transparent;
+}
+
+#nav1{
+  background: transparent;
+}
+
+.navbar1{
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  justify-content: end;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: -50px;
+  left: 5px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: rgb(160, 66, 207);
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2;
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 200px;
+  margin: -100px 0 0 -60px;
+  padding: 50px;
+  padding-top: 100px;
+  
+  background: transparent;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+}
+
+#menu li
+{
+
+  font-size: 20px;
+  background: transparent;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
